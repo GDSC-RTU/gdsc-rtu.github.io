@@ -10,89 +10,78 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: #443a8b;
+	background: #ffffff;
 	z-index: 100000000;
 	opacity: 1;
 	overflow:hidden;
 	text-align: center;
 }
-#loader {
-	background-color: #a1cec7;
+.preload-juggle {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -150px;
 }
-.home-slider #loader{
+.preload-juggle div {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 10.5px;
+  margin-top: 150px;
+  margin-left: 150px;
+  animation: juggle 2.1s linear infinite;
+}
+.preload-juggle div:nth-child(1) {
+  background: #DB4437;
+  animation-delay: -0.7s;
+}
+.preload-juggle div:nth-child(2) {
+  background: #4285F4;
+  animation-delay: -1.4s;
+}
+.preload-juggle div:nth-child(3) {
+  background: #0F9D58;
+}
+
+@keyframes juggle {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  12.5% {
+    transform: translateX(27.5px) translateY(-57px) scale(1.1);
+  }
+  25% {
+    transform: translateX(55px) translateY(0px);
+  }
+  37.5% {
+    transform: translateX(27.5px) translateY(57px);
+  }
+  50% {
+    transform: translateX(0px) translateY(0px);
+  }
+  62.5% {
+    transform: translateX(-27.5px) translateY(-57px) scale(1.1);
+  }
+  75% {
+    transform: translateX(-55px) translateY(0px);
+  }
+  87.5% {
+    transform: translateX(-27.5px) translateY(57px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+/*****loader ends*****/
+
+
+.home-slider{
 	z-index: 9999;
 	background:#fff;
-}
-div.ldr {
-	width: 8vmax;
-	height: 8vmax;
-	border-right: 4px solid #fff;
-	border-radius: 100%;
-	-webkit-animation: spinRight 800ms linear infinite;
-	animation: spinRight 800ms linear infinite;
-}
-div.ldr:before, div.ldr:after {
-	content: '';
-	width: 6vmax;
-	height: 6vmax;
-	display: block;
-	position: absolute;
-	top: calc(50% - 3vmax);
-	left: calc(50% - 3vmax);
-	border-left: 3px solid #fff;
-	border-radius: 100%;
-	-webkit-animation: spinLeft 800ms linear infinite;
-	animation: spinLeft 800ms linear infinite;
-}
-div.ldr:after {
-	width: 4vmax;
-	height: 4vmax;
-	top: calc(50% - 2vmax);
-	left: calc(50% - 2vmax);
-	border: 0;
-	border-right: 2px solid #fff;
-	-webkit-animation: none;
-	animation: none;
-}
- @-webkit-keyframes spinLeft {
- from {
- -webkit-transform: rotate(0deg);
- transform: rotate(0deg);
-}
-to {
-	-webkit-transform: rotate(720deg);
-	transform: rotate(720deg);
-}
-}
- @keyframes spinLeft {
- from {
- -webkit-transform: rotate(0deg);
- transform: rotate(0deg);
-}
-to {
-	-webkit-transform: rotate(720deg);
-	transform: rotate(720deg);
-}
-}
-@-webkit-keyframes spinRight {
- from {
- -webkit-transform: rotate(360deg);
- transform: rotate(360deg);
-}
-to {
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
-}
-@keyframes spinRight {
- from {
- -webkit-transform: rotate(360deg);
- transform: rotate(360deg);
-}
-to {
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
 }
 .hom-slie {
 	position: absolute !important;
