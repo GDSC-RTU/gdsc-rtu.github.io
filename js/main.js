@@ -356,7 +356,7 @@ function checkmail(input){
 				  $('#contact_form').fadeOut(1000);
 					$('#contact_message').fadeIn(1000);
 						document.getElementById("contact_message");
-					 //return true;
+					 return true;
 				}
 			  });
 			}
