@@ -322,7 +322,6 @@ function checkmail(input){
 		  };
 		  firebase.initializeApp(firebaseConfig);
 		   // Get a reference to the database service
-			var database = firebase.database();
 		var errors = "";
 		if(name.value == ""){ 
 		name.className = 'error';
