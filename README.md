@@ -1,1 +1,0 @@
-# dscrtukota.github.io
