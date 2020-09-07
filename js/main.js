@@ -321,7 +321,8 @@ function checkmail(input){
 			appId: "1:316714595807:web:b7242af53393cb1a44806a"
 		  };
 		  firebase.initializeApp(firebaseConfig);
-		 
+		   // Get a reference to the database service
+			var database = firebase.database();
 		var errors = "";
 		if(name.value == ""){ 
 		name.className = 'error';
@@ -342,10 +343,10 @@ function checkmail(input){
 		  {
             
 		  firebase.database().ref('feedback').push({
-				name: name,
-				email: email,
-				phone: company,
-				message: msg
+				name: name.value,
+				email: email.value,
+				phone: company.value,
+				message: msg.value
 			  }, function(error) {
 				if (error) {
 				  // The write failed...
@@ -355,7 +356,7 @@ function checkmail(input){
 				  $('#contact_form').fadeOut(1000);
 					$('#contact_message').fadeIn(1000);
 						document.getElementById("contact_message");
-					 return true;
+					 //return true;
 				}
 			  });
 			}
