@@ -3044,7 +3044,8 @@ header.header-3d{
 	text-align: center;
 }
 .footer .rights p {
-	color: #2d2464;
+	/* color: #2d2464; */
+	color: white;
 }
 .footer .rights p small {
 	font-size: 12px;
