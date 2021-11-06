@@ -4193,9 +4193,15 @@ header .is-sticky .sticky {
 	font-family: 'Montserrat', sans-serif;
 	opacity: 0.3;
 }
+
 .center{
-	display: flex;
+	display:flex;
 	justify-content: center;
-	align-items: center;
-	text-align: center;
+	align-items:center;
+	text-align:center;
 }
+
+footer p{
+	color:white!important;
+}
+
