@@ -976,6 +976,10 @@ hr.margin-top-100 {
 	margin:0px;
 }
 }
+header .logo img {
+    width: 170px;
+}
+
 @media(max-width:440px) {
 .clients li {
 	width: 100%;
