@@ -1018,7 +1018,9 @@ hr.margin-top-100 {
 .sub-bnr-home h5 {
 	font-size: 28px;
 }
-
+p {
+    font-size: 15px;
+}
 }
 @media(max-width:320px) {
 .portfolio .ma-3b .cbp-item.portfolio-item{
