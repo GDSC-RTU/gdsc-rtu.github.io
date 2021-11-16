@@ -1018,7 +1018,19 @@ hr.margin-top-100 {
 .sub-bnr-home h5 {
 	font-size: 28px;
 }
-
+.icon-larger-img img {
+    width: 230px;
+}
+.services .icon-larger-img {
+	width: 220px;
+    margin-top: 0px;
+}
+.media-left, .media>.pull-left {
+    padding-right: 0px;
+}
+p {
+    font-size: 15px;
+}
 }
 @media(max-width:320px) {
 .portfolio .ma-3b .cbp-item.portfolio-item{
