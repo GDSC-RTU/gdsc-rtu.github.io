@@ -1021,6 +1021,16 @@ hr.margin-top-100 {
 p {
     font-size: 15px;
 }
+.icon-larger-img img {
+    width: 230px;
+}
+.services .icon-larger-img {
+	width: 220px;
+    margin-top: 0px;
+}
+.media-left, .media>.pull-left {
+    padding-right: 0px;
+}
 }
 @media(max-width:320px) {
 .portfolio .ma-3b .cbp-item.portfolio-item{
