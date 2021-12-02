@@ -443,6 +443,8 @@ header .logo {
 header .logo img {
 	z-index: 3;
 	position: relative;
+	bottom: 63px;
+	width: 186px;
 }
 .sticky-wrapper {
 	height: auto !important;

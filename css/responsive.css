@@ -977,7 +977,8 @@ hr.margin-top-100 {
 }
 }
 header .logo img {
-    width: 170px;
+    width: 155px;
+	bottom: 44px;
 }
 
 @media(max-width:440px) {
