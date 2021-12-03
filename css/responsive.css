@@ -505,7 +505,9 @@ header .sticky {
 header .ownmenu ul.dropdown {
 	float: left;
 }
-header .logo {
+header .logo img {
+    width: 155px;
+	bottom: 44px;
 }
 header .navbar {
 	margin: 0px;
@@ -843,7 +845,7 @@ hr.margin-top-100 {
 	margin-bottom: 30px;
 }
 }
-@media(max-width:540px) {
+@media (max-width:540px) {
 .col-3 .portfolio-item {
 	width: 100%;
 }
@@ -976,10 +978,7 @@ hr.margin-top-100 {
 	margin:0px;
 }
 }
-header .logo img {
-    width: 155px;
-	bottom: 44px;
-}
+
 
 @media(max-width:440px) {
 .clients li {
