@@ -529,7 +529,7 @@ header .navbar {
 header .navbar li a {
 	width: 100%;
 	text-align: left;
-	color: #fff;
+	color: #000;
 	padding:10px 0;
 }
 header .navbar li {
